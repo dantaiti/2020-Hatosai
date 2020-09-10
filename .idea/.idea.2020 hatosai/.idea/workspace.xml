@@ -29,7 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -80,7 +80,7 @@
       <updated>1599627956875</updated>
       <workItem from="1599627964884" duration="1022000" />
       <workItem from="1599668295649" duration="1000" />
-      <workItem from="1599709457557" duration="6383000" />
+      <workItem from="1599709457557" duration="7264000" />
     </task>
     <servers />
   </component>
@@ -103,5 +103,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="616" y="252" key="run.anything.popup" timestamp="1599731687774">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="252" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599731687774" />
   </component>
 </project>
