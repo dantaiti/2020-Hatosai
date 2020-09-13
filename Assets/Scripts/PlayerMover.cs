@@ -25,7 +25,7 @@ public class PlayerMover : MonoBehaviour
         LocalMove(h,v,xyspeed);
         ClampPos();
         RotationLook(h,v,lookspeed);
-        HorizontalLean(_playerModel,h,80,0.1f);
+        HorizontalLean(_playerModel,h,50,0.1f);
     }
 
     void LocalMove(float x, float y, float speed)
@@ -49,7 +49,15 @@ public class PlayerMover : MonoBehaviour
     }
     void HorizontalLean(Transform target, float axis, float leanLimit, float lerpTime)
     {
-        Vector3 targetEulerAngels = target.localEulerAngles;
-        target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z, -axis * leanLimit, lerpTime));
+      Vector3 targetEulerAngels = target.localEulerAngles;
+      target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z, -axis * leanLimit, lerpTime));
     }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(aimTarget.position, .5f);
+        Gizmos.DrawSphere(aimTarget.position, .15f);
+    }
+    
 }
