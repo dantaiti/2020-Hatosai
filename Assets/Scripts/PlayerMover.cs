@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class PlayerMover : MonoBehaviour
 {
     private Transform _playerModel;
     // Start is called before the first frame update
     public float xyspeed;
     public float lookspeed;
+    private float _leanAxis;
     
     [Header("Public References")]
     public Transform aimTarget;
@@ -22,10 +23,14 @@ public class PlayerMover : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        
+        
+        
         LocalMove(h,v,xyspeed);
         ClampPos();
         RotationLook(h,v,lookspeed);
         HorizontalLean(_playerModel,h,50,0.1f);
+        Lean(_playerModel,0.1f);
     }
 
     void LocalMove(float x, float y, float speed)
@@ -59,5 +64,17 @@ public class PlayerMover : MonoBehaviour
         Gizmos.DrawWireSphere(aimTarget.position, .5f);
         Gizmos.DrawSphere(aimTarget.position, .15f);
     }
+
+
+    private void Lean(Transform target,float lerpTime)
+    {
+        _leanAxis = Input.GetAxis("Fire3");　// 左シフト　右シフトボタンでリーン
+        //  if (Input.GetKey(KeyCode.E)) _leanAxis = 1;
+        //if (Input.GetKey(KeyCode.Q)) _leanAxis = -1;
+        Vector3 targetEulerAngels = target.localEulerAngles;
+        target.localEulerAngles = new Vector3(targetEulerAngels.x,targetEulerAngels.y,Mathf.LerpAngle(targetEulerAngels.z,_leanAxis* 170f,0.08f));
+
+    }
+    
     
 }
