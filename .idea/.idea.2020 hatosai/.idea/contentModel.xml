@@ -27,6 +27,13 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
+          <e p="gomadare" t="Include">
+            <e p="Shoot" t="Include">
+              <e p="BulletMove.cs" t="Include" />
+              <e p="BulletPool.cs" t="Include" />
+              <e p="ShotRayPoint.cs" t="Include" />
+            </e>
+          </e>
           <e p="MovePlane.cs" t="Include" />
           <e p="PlayerMover.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
