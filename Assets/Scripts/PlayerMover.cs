@@ -16,7 +16,7 @@ public class PlayerMover : MonoBehaviour
     [Header("Public References")]
     public Transform aimTarget;
 
-    public CinemachineDollyCart dolly;
+   // public CinemachineDollyCart dolly;
    
     void Start()
     {
