@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Cinemachine;
 public class PlayerMover : MonoBehaviour
 {
     private Transform _playerModel;
@@ -10,8 +11,12 @@ public class PlayerMover : MonoBehaviour
     public float lookspeed;
     private float _leanAxis;
     
+    public float forwardSpeed = 6;
+    
     [Header("Public References")]
     public Transform aimTarget;
+
+    public CinemachineDollyCart dolly;
    
     void Start()
     {
