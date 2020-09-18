@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\minec\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\minec\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_2020-Hatosai.1726383185.00" t="ExcludeRecursive" />
+    <e p="C:\Users\minec\2020-Hatosai" t="IncludeRecursive">
+      <e p="2020-Hatosai.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="gomadare" t="Include">
+            <e p="Shoot" t="Include">
+              <e p="BulletMove.cs" t="Include" />
+              <e p="BulletPool.cs" t="Include" />
+              <e p="ShotRayPoint.cs" t="Include" />
+            </e>
+          </e>
+          <e p="PlayerMover.cs" t="Include" />
+          <e p="SimpleCameraController.cs" t="Include" />
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
