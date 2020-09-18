@@ -9,6 +9,13 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="gomadare" t="Include">
+            <e p="Shoot" t="Include">
+              <e p="BulletMove.cs" t="Include" />
+              <e p="BulletPool.cs" t="Include" />
+              <e p="ShotRayPoint.cs" t="Include" />
+            </e>
+          </e>
           <e p="PlayerMover.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
         </e>

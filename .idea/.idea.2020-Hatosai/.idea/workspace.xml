@@ -11,7 +11,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1hKkzJIAdN8CS7lVTfCtH8xztu1" />
   <component name="ProjectViewState">
@@ -61,7 +73,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599767433123</updated>
-      <workItem from="1599767439502" duration="279000" />
+      <workItem from="1599767439502" duration="4352000" />
+      <workItem from="1600123743732" duration="1415000" />
+      <workItem from="1600194160377" duration="600000" />
+      <workItem from="1600363395974" duration="11981000" />
     </task>
     <servers />
   </component>
@@ -75,7 +90,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
