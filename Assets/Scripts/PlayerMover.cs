@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
+using UnityEngine.Serialization;
+
 public class PlayerMover : MonoBehaviour
 {
     private Transform _playerModel;
@@ -10,17 +12,20 @@ public class PlayerMover : MonoBehaviour
     public float xyspeed;
     public float lookspeed;
     private float _leanAxis;
-    private  int _key;
-    public float forwardSpeed = 6;
+    public float forwardSpeed = 6; //機体の速さ
+    public float boostMagni;
     
     [Header("Public References")]
     public Transform aimTarget;
 
-   // public CinemachineDollyCart dolly;
+    public Transform cameraParent;
+
+    public CinemachineDollyCart dolly;
    
     void Start()
     {
         _playerModel = transform.GetChild(0);
+        SetSpeed(forwardSpeed);
     }
 
     // Update is called once per frame
@@ -34,7 +39,29 @@ public class PlayerMover : MonoBehaviour
         ClampPos();
         RotationLook(h,v,lookspeed);
         HorizontalLean(_playerModel,h,50,0.1f);
-       
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Boost(true);
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            Boost(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Break(true);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Break(false);
+        }
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.G))
+        {
+            int dir = Input.GetKeyDown(KeyCode.F) ? -1 : 1;
+            QuickSpin(dir);
+        }
         
     }
 
@@ -76,5 +103,45 @@ public class PlayerMover : MonoBehaviour
         Gizmos.DrawWireSphere(aimTarget.position, .5f);
         Gizmos.DrawSphere(aimTarget.position, .15f);
     }
+
+
+    void SetCameraZoom(float zoom, float duration)
+    {
+        cameraParent.DOLocalMove(new Vector3(0, 0, zoom), duration);
+    }
+   public void SetSpeed(float x)
+    {
+        dolly.m_Speed = x;
+    }
+    void Boost(bool state)
+    {
+        float speed = state ? forwardSpeed * boostMagni : forwardSpeed;
+        float zoom = state ? -8f : 0;
+
+        if (state)
+        {
+            cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
+        }
+        
+        DOVirtual.Float(dolly.m_Speed, speed, 0.15f, SetSpeed);
+        SetCameraZoom(zoom,0.5f);
+        
+    }
+
+    void Break(bool state)
+    {
+        float speed = state ? forwardSpeed / 3 : forwardSpeed;
+        float zoom = state ? 3f : 0;
+
+        DOVirtual.Float(dolly.m_Speed, speed, 0.15f, SetSpeed);
+        SetCameraZoom(zoom,0.5f);
+    }
     
+    public void QuickSpin(int dir)
+    {
+        if (!DOTween.IsTweening(_playerModel))
+        {
+            _playerModel.DOLocalRotate(new Vector3(_playerModel.localEulerAngles.x, _playerModel.localEulerAngles.y, 360 * -dir), .4f, RotateMode.LocalAxisAdd).SetEase(Ease.OutSine);
+        }
+    }
 }
