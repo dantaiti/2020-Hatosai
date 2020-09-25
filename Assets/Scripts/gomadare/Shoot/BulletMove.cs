@@ -12,7 +12,7 @@ public class BulletMove : MonoBehaviour
     // [SerializeField]
     // private GameObject shotpoint;
     private Transform transf_Bullet;
-    private const float BULLET_LIFE_TIME = 2;
+    private const float BULLET_LIFE_TIME = 1;
     private float bulletLifeTimer;
     public float movespeed=10;
     private Rigidbody rb;

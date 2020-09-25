@@ -35,13 +35,13 @@ public class CameraFollow : MonoBehaviour
         FollowTarget(target);
     }
 
-    void LateUpdate()
+    
+void LateUpdate()
     {
         Vector3 localPos = transform.localPosition;
 
         transform.localPosition = new Vector3(Mathf.Clamp(localPos.x, -limits.x, limits.x), Mathf.Clamp(localPos.y, -limits.y, limits.y), localPos.z);
     }
-
     public void FollowTarget(Transform t)
     {
         Vector3 localPos = transform.localPosition;
