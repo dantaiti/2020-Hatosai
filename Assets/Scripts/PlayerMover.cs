@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
+using UnityEngine.Serialization;
+
 public class PlayerMover : MonoBehaviour
 {
     private Transform _playerModel;
@@ -10,8 +12,8 @@ public class PlayerMover : MonoBehaviour
     public float xyspeed;
     public float lookspeed;
     private float _leanAxis;
-    private  int _key;
-    public float forwardSpeed = 6;
+    public float forwardSpeed = 6; //機体の速さ
+    public float boostMagni;
     
     [Header("Public References")]
     public Transform aimTarget;
@@ -107,21 +109,20 @@ public class PlayerMover : MonoBehaviour
     {
         cameraParent.DOLocalMove(new Vector3(0, 0, zoom), duration);
     }
-    void SetSpeed(float x)
+   public void SetSpeed(float x)
     {
         dolly.m_Speed = x;
     }
     void Boost(bool state)
     {
-        float speed = state ? forwardSpeed * 3 : forwardSpeed;
+        float speed = state ? forwardSpeed * boostMagni : forwardSpeed;
         float zoom = state ? -8f : 0;
 
         if (state)
         {
             cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
         }
-       
-
+        
         DOVirtual.Float(dolly.m_Speed, speed, 0.15f, SetSpeed);
         SetCameraZoom(zoom,0.5f);
         
