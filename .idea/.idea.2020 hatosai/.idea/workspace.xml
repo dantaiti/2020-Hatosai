@@ -46,9 +46,9 @@
         <option value="$PROJECT_DIR$/Assets/PlayerMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MovePlane.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +107,10 @@
       <workItem from="1601338400919" duration="15687000" />
       <workItem from="1601542118179" duration="22000" />
       <workItem from="1601549261490" duration="3929000" />
-      <workItem from="1601981635366" duration="4204000" />
+      <workItem from="1601981635366" duration="4205000" />
+      <workItem from="1602051837298" duration="3989000" />
+      <workItem from="1602260866852" duration="5371000" />
+      <workItem from="1602585253947" duration="47000" />
     </task>
     <servers />
   </component>

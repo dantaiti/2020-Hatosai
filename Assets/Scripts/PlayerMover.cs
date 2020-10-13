@@ -18,13 +18,19 @@ public class PlayerMover : MonoBehaviour
     public bool isBoost;
     [Header("Public References")]
     public Transform aimTarget;
-
     public Transform cameraParent;
-
     public CinemachineDollyCart dolly;
-   
+    
+    [Space]
+
+    [Header("Particles")]
+    public ParticleSystem trail;
+    public ParticleSystem boost1;
+    public ParticleSystem boost2;
     void Start()
     {
+        boost2 = GetComponent<ParticleSystem>();
+        boost1 = GetComponent<ParticleSystem>();
         _playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
     }
@@ -115,6 +121,7 @@ public class PlayerMover : MonoBehaviour
         float zoom = state ? -8f : 0;
         float orignalFov = state ? 40 : 55;
         float endFov = state ? 55 : 40;
+        
         isBoost = state ? true : false;
 
         if (state)
