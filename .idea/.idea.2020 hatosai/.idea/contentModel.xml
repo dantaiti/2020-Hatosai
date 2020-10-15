@@ -9,6 +9,20 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AllSkyFree" t="Include">
+          <e p="AllSkyFree_Readme.txt" t="Include" />
+        </e>
+        <e p="Movinarc" t="Include">
+          <e p="PackageUninstaller" t="Include">
+            <e p="Editor" t="Include">
+              <e p="PUManager.cs" t="Include" />
+              <e p="PUSelection.cs" t="Include" />
+              <e p="TreeNode.cs" t="Include" />
+              <e p="TreeView.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
