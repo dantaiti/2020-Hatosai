@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class PlayerMover : MonoBehaviour
 {
@@ -13,24 +14,19 @@ public class PlayerMover : MonoBehaviour
     public float lookspeed;
     private float _leanAxis;
     public float forwardSpeed = 6; //機体の速さ
-    public float boostMagni;
+    public float boostMagni; 
+    public float fuelEconomy; //燃費　ブレーキとブーストに使用
     public bool isBreak;
     public bool isBoost;
     [Header("Public References")]
     public Transform aimTarget;
     public Transform cameraParent;
     public CinemachineDollyCart dolly;
-    
-    [Space]
+    public Image boostGauge;
 
-    [Header("Particles")]
-    public ParticleSystem trail;
-    public ParticleSystem boost1;
-    public ParticleSystem boost2;
     void Start()
     {
-        boost2 = GetComponent<ParticleSystem>();
-        boost1 = GetComponent<ParticleSystem>();
+      //  _uiColorChange = GetComponent<UiColorChange>();
         _playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
     }
@@ -47,20 +43,27 @@ public class PlayerMover : MonoBehaviour
         RotationLook(h,v,lookspeed);
         HorizontalLean(_playerModel,h,50,0.1f);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        
+        if (Input.GetKeyDown(KeyCode.Space)&&boostGauge.fillAmount>0)
         {
             Boost(true);
+            
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        
+        DecBoostGauge(isBoost,isBreak);
+        //DecBoostGauge(isBreak);
+
+        if (Input.GetKeyUp(KeyCode.Space)||boostGauge.fillAmount<=0)
         {
             Boost(false);
         }
-
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        
+        
+        if (Input.GetKeyDown(KeyCode.LeftControl)&&boostGauge.fillAmount>0)
         {
             Break(true);
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        if (Input.GetKeyUp(KeyCode.LeftControl)||boostGauge.fillAmount<=0)
         {
             Break(false);
         }
@@ -70,6 +73,8 @@ public class PlayerMover : MonoBehaviour
             QuickSpin(dir);
         }
         
+        Debug.Log(isBoost);
+       
     }
 
     void LocalMove(float x, float y, float speed)
@@ -117,21 +122,26 @@ public class PlayerMover : MonoBehaviour
     }
    public void Boost(bool state)
     {
-        float speed = state ? forwardSpeed * boostMagni : forwardSpeed;
-        float zoom = state ? -8f : 0;
-        float orignalFov = state ? 40 : 55;
-        float endFov = state ? 55 : 40;
         
-        isBoost = state ? true : false;
+            float speed = state ? forwardSpeed * boostMagni : forwardSpeed;
+            float zoom = state ? -18f : 0;
+            float orignalFov = state ? 40 : 55;
+            float endFov = state ? 55 : 40;
 
-        if (state)
-        {
-            cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
-        }
-        DOVirtual.Float(orignalFov, endFov, .5f, FovContoroll);
-        DOVirtual.Float(dolly.m_Speed, speed, 0.15f, SetSpeed);
-        SetCameraZoom(zoom,0.5f);
+            isBoost = state ? true : false;
+
+       
+            if (state)
+            {
+                cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
+               
+            }
+           // DOVirtual.Float(orignalFov, endFov, .5f, FovContoroll);
+            DOVirtual.Float(dolly.m_Speed, speed, 0.35f, SetSpeed);
+            SetCameraZoom(zoom, 0.5f);
+            
         
+
     }
 
    public void Break(bool state)
@@ -160,5 +170,19 @@ public class PlayerMover : MonoBehaviour
     void FovContoroll(float fov)
     {
         cameraParent.GetComponentInChildren<CinemachineVirtualCamera>().m_Lens.FieldOfView = fov;
+    }
+
+    void DecBoostGauge(bool isboost,bool isbreak)
+    {
+        if (isboost||isbreak)
+        {
+            boostGauge.fillAmount -= fuelEconomy ;
+        }
+        else
+        {
+            boostGauge.fillAmount += fuelEconomy ;
+
+        }
+
     }
 }

@@ -37,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -48,6 +49,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
       </list>
     </option>
@@ -112,6 +114,7 @@
       <workItem from="1602260866852" duration="5371000" />
       <workItem from="1602585253947" duration="674000" />
       <workItem from="1602756602679" duration="707000" />
+      <workItem from="1603029495809" duration="13886000" />
     </task>
     <servers />
   </component>
@@ -136,9 +139,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="252" key="run.anything.popup" timestamp="1599731687774">
+    <state x="616" y="252" key="run.anything.popup" timestamp="1603031499197">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="616" y="252" key="run.anything.popup/0.0.1920.1080/-1920.-92.1920.1080@0.0.1920.1080" timestamp="1603031499197" />
     <state x="616" y="252" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599731687774" />
     <state x="518" y="437" width="672" height="678" key="search.everywhere.popup" timestamp="1600371636733">
       <screen x="0" y="0" width="1920" height="1080" />

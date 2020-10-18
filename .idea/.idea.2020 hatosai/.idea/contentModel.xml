@@ -53,6 +53,7 @@
           <e p="MovePlane.cs" t="Include" />
           <e p="PlayerMover.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="UIColorChange.cs" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
