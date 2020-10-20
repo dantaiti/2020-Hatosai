@@ -14,16 +14,23 @@ public class PlayerMover : MonoBehaviour
     private float _leanAxis;
     public float forwardSpeed = 6; //機体の速さ
     public float boostMagni;
-    
+    public bool isBreak;
+    public bool isBoost;
     [Header("Public References")]
     public Transform aimTarget;
-
     public Transform cameraParent;
-
     public CinemachineDollyCart dolly;
-   
+    
+    [Space]
+
+    [Header("Particles")]
+    public ParticleSystem trail;
+    public ParticleSystem boost1;
+    public ParticleSystem boost2;
     void Start()
     {
+        boost2 = GetComponent<ParticleSystem>();
+        boost1 = GetComponent<ParticleSystem>();
         _playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
     }
@@ -103,36 +110,36 @@ public class PlayerMover : MonoBehaviour
         Gizmos.DrawWireSphere(aimTarget.position, .5f);
         Gizmos.DrawSphere(aimTarget.position, .15f);
     }
-
-
-    void SetCameraZoom(float zoom, float duration)
-    {
-        cameraParent.DOLocalMove(new Vector3(0, 0, zoom), duration);
-    }
+    
    public void SetSpeed(float x)
     {
         dolly.m_Speed = x;
     }
-    void Boost(bool state)
+   public void Boost(bool state)
     {
         float speed = state ? forwardSpeed * boostMagni : forwardSpeed;
         float zoom = state ? -8f : 0;
+        float orignalFov = state ? 40 : 55;
+        float endFov = state ? 55 : 40;
+        
+        isBoost = state ? true : false;
 
         if (state)
         {
             cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
         }
-        
+        DOVirtual.Float(orignalFov, endFov, .5f, FovContoroll);
         DOVirtual.Float(dolly.m_Speed, speed, 0.15f, SetSpeed);
         SetCameraZoom(zoom,0.5f);
         
     }
 
-    void Break(bool state)
+   public void Break(bool state)
     {
         float speed = state ? forwardSpeed / 3 : forwardSpeed;
-        float zoom = state ? 3f : 0;
-
+        float zoom = state ? 3f : 0; 
+        isBreak = state ? true : false;
+        
         DOVirtual.Float(dolly.m_Speed, speed, 0.15f, SetSpeed);
         SetCameraZoom(zoom,0.5f);
     }
@@ -143,5 +150,15 @@ public class PlayerMover : MonoBehaviour
         {
             _playerModel.DOLocalRotate(new Vector3(_playerModel.localEulerAngles.x, _playerModel.localEulerAngles.y, 360 * -dir), .4f, RotateMode.LocalAxisAdd).SetEase(Ease.OutSine);
         }
+    }
+    
+    void SetCameraZoom(float zoom, float duration)
+    {
+        cameraParent.DOLocalMove(new Vector3(0, 0, zoom), duration);
+    }
+
+    void FovContoroll(float fov)
+    {
+        cameraParent.GetComponentInChildren<CinemachineVirtualCamera>().m_Lens.FieldOfView = fov;
     }
 }

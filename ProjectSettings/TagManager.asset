@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Muzzle
+=======
+  - Item
+>>>>>>> c1c70b37d268798aa894473e5eeea0ed4b7e3a8b
   layers:
   - Default
   - TransparentFX
