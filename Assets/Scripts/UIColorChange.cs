@@ -9,26 +9,39 @@ public class UIColorChange : MonoBehaviour
 {
   
    
-    public Image visualGauge;
-    
-    private void Update()
+    private Image _visualGauge;
+   
+    private void Start()
     {
-        Color red = new Color(0.01f, 0, 0, 0);
-        Color green = new Color(0, 0.01f, 0, 0);
-        if (visualGauge.fillAmount > 0.5f)
-        {
-            visualGauge.color += red;
-        }
+        _visualGauge =GetComponent<Image>();
         
-        if (visualGauge.fillAmount < 0.5f)
-        {
-            visualGauge.color -= green;
-        }
     }
 
-   public void ColorChange( float boostEconomy)
+    private void Update()
     {
         
+        if (_visualGauge.fillAmount <0.2f)
+        {
+            _visualGauge.color = new Color(255,0,0,255);
+            
+        }
+        
+        if (_visualGauge.fillAmount < 0.5f && _visualGauge.fillAmount > 0.2f)
+        {
+            _visualGauge.color = new Color(255,255,0,255);
+        }
+
+        if (_visualGauge.fillAmount>=0.5f)
+        {
+            _visualGauge.color = new Color(0,255,0,255);
+        }
+        if(_visualGauge.fillAmount==1f)
+        {
+            _visualGauge.color = new Color(0,255,255,255);
+        }
+
     }
+
+   
 
 }

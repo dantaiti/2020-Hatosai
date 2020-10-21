@@ -18,7 +18,7 @@ public class ItemGetter : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Item"))
         {

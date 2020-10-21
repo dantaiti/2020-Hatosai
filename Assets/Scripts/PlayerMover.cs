@@ -18,6 +18,9 @@ public class PlayerMover : MonoBehaviour
     public float fuelEconomy; //燃費　ブレーキとブーストに使用
     public bool isBreak;
     public bool isBoost;
+
+    public float coolDown;//クールダウンの時間
+    [SerializeField] private bool onCoolDown;
     [Header("Public References")]
     public Transform aimTarget;
     public Transform cameraParent;
@@ -29,6 +32,7 @@ public class PlayerMover : MonoBehaviour
       //  _uiColorChange = GetComponent<UiColorChange>();
         _playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
+        onCoolDown = false;
     }
 
     // Update is called once per frame
@@ -51,11 +55,11 @@ public class PlayerMover : MonoBehaviour
         }
         
         DecBoostGauge(isBoost,isBreak);
-        //DecBoostGauge(isBreak);
 
         if (Input.GetKeyUp(KeyCode.Space)||boostGauge.fillAmount<=0)
         {
             Boost(false);
+            StartCoroutine(BoostCoolDown());
         }
         
         
@@ -66,6 +70,8 @@ public class PlayerMover : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftControl)||boostGauge.fillAmount<=0)
         {
             Break(false);
+            StartCoroutine(BoostCoolDown());
+
         }
         if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.G))
         {
@@ -134,14 +140,11 @@ public class PlayerMover : MonoBehaviour
             if (state)
             {
                 cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
-               
             }
            // DOVirtual.Float(orignalFov, endFov, .5f, FovContoroll);
             DOVirtual.Float(dolly.m_Speed, speed, 0.35f, SetSpeed);
             SetCameraZoom(zoom, 0.5f);
-            
         
-
     }
 
    public void Break(bool state)
@@ -172,17 +175,25 @@ public class PlayerMover : MonoBehaviour
         cameraParent.GetComponentInChildren<CinemachineVirtualCamera>().m_Lens.FieldOfView = fov;
     }
 
+
+    IEnumerator BoostCoolDown()
+    {
+        onCoolDown = true;
+            yield return  new WaitForSeconds(coolDown);
+            onCoolDown = false;
+    }
+
     void DecBoostGauge(bool isboost,bool isbreak)
     {
-        if (isboost||isbreak)
+        if (isboost||isbreak)//ブースト中またはブレーキ中ゲージを減らす
         {
             boostGauge.fillAmount -= fuelEconomy ;
+            
         }
-        else
+        if (!(isboost||isbreak)&&!onCoolDown)//ブースとブレーキクールダウン中じゃなかったら回復
         {
-            boostGauge.fillAmount += fuelEconomy ;
-
+            boostGauge.fillAmount += 0.001f;
         }
-
+        
     }
 }
