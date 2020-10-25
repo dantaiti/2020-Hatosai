@@ -20,12 +20,16 @@ public class PlayerMover : MonoBehaviour
     public bool isBoost;
 
     public float coolDown;//クールダウンの時間
+    [Space]
     [SerializeField] private bool onCoolDown;
     [Header("Public References")]
     public Transform aimTarget;
     public Transform cameraParent;
     public CinemachineDollyCart dolly;
     public Image boostGauge;
+
+    public ParticleSystem boostParticleRight;
+    public ParticleSystem boostParticleLeft;
 
     void Start()
     {
@@ -79,7 +83,7 @@ public class PlayerMover : MonoBehaviour
             QuickSpin(dir);
         }
         
-        Debug.Log(isBoost);
+      //  Debug.Log(isBoost);
        
     }
 
@@ -140,6 +144,13 @@ public class PlayerMover : MonoBehaviour
             if (state)
             {
                 cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
+                boostParticleLeft.Play();
+                boostParticleRight.Play();
+            }
+            else
+            {
+                boostParticleLeft.Stop();
+                boostParticleRight.Stop();
             }
            // DOVirtual.Float(orignalFov, endFov, .5f, FovContoroll);
             DOVirtual.Float(dolly.m_Speed, speed, 0.35f, SetSpeed);

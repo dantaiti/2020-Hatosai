@@ -26,7 +26,7 @@ public class UIColorChange : MonoBehaviour
             
         }
         
-        if (_visualGauge.fillAmount < 0.5f && _visualGauge.fillAmount > 0.2f)
+        if (_visualGauge.fillAmount < 0.5f && _visualGauge.fillAmount > 0.2f) 
         {
             _visualGauge.color = new Color(255,255,0,255);
         }
