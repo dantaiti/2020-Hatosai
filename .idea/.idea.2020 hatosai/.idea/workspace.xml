@@ -34,9 +34,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovePlane.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenPreviewManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -47,6 +49,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MovePlane.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
       </list>
@@ -110,7 +113,16 @@
       <workItem from="1601981635366" duration="4205000" />
       <workItem from="1602051837298" duration="3989000" />
       <workItem from="1602260866852" duration="5371000" />
-      <workItem from="1602585253947" duration="47000" />
+      <workItem from="1602585253947" duration="674000" />
+      <workItem from="1602756602679" duration="707000" />
+      <workItem from="1603029495809" duration="13886000" />
+      <workItem from="1603192133748" duration="6813000" />
+      <workItem from="1603259725010" duration="3875000" />
+      <workItem from="1603370619759" duration="3015000" />
+      <workItem from="1603589270573" duration="4437000" />
+      <workItem from="1603730257730" duration="6929000" />
+      <workItem from="1603797327420" duration="685000" />
+      <workItem from="1603945409027" duration="130000" />
     </task>
     <servers />
   </component>
@@ -135,9 +147,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="252" key="run.anything.popup" timestamp="1599731687774">
+    <state x="616" y="252" key="run.anything.popup" timestamp="1603031499197">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="616" y="252" key="run.anything.popup/0.0.1920.1080/-1920.-92.1920.1080@0.0.1920.1080" timestamp="1603031499197" />
     <state x="616" y="252" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599731687774" />
     <state x="518" y="437" width="672" height="678" key="search.everywhere.popup" timestamp="1600371636733">
       <screen x="0" y="0" width="1920" height="1080" />

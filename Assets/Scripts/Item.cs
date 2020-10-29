@@ -51,7 +51,7 @@ public class Item : MonoBehaviour
                 .SetAutoKill(false)
                 .OnComplete(() => {
                 // アニメーションが終了時によばれる
-                Debug.Log("Complete!");
+                
                     Destroy(gameObject);
             });
     }
