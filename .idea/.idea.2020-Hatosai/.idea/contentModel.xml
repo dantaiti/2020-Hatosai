@@ -28,12 +28,21 @@
         <e p="Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
           <e p="gomadare" t="Include">
+            <e p="Enemy" t="Include">
+              <e p="Enemy.cs" t="Include" />
+              <e p="EnemyActiveChange.cs" t="Include" />
+              <e p="EnemyShot.cs" t="Include" />
+            </e>
             <e p="Shoot" t="Include">
+              <e p="aimcontrol.cs" t="Include" />
               <e p="BulletMove.cs" t="Include" />
               <e p="BulletPool.cs" t="Include" />
+              <e p="ShotInstance.cs" t="Include" />
               <e p="ShotRayPoint.cs" t="Include" />
             </e>
           </e>
+          <e p="Item.cs" t="Include" />
+          <e p="ItemGetter.cs" t="Include" />
           <e p="MovePlane.cs" t="Include" />
           <e p="PlayerMover.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />

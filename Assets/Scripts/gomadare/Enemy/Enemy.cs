@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 
     public int HP;
     public int Attack;
+    public int score;
     
     public 
     // Start is called before the first frame update
@@ -22,13 +23,12 @@ public class Enemy : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger");
         if (other.gameObject.tag == "Bullet")
         {
             HP--;
-            
             if (HP == 0) this.gameObject.SetActive(false);
         }
     }
