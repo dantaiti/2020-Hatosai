@@ -9,17 +9,20 @@ using UnityEngine.UI;
 public class PlayerMover : MonoBehaviour
 {
     private Transform _playerModel;
+    private float _leanAxis;
+    private bool _canspin;
     // Start is called before the first frame update
     public float xyspeed;
     public float lookspeed;
-    private float _leanAxis;
     public float forwardSpeed = 6; //機体の速さ
     public float boostMagni; 
     public float fuelEconomy; //燃費　ブレーキとブーストに使用
     public bool isBreak;
     public bool isBoost;
-
+   
     public float coolDown;//クールダウンの時間
+    public float spinReceptionTime;
+    [Space]
     [SerializeField] private bool onCoolDown;
     [Header("Public References")]
     public Transform aimTarget;
@@ -27,9 +30,11 @@ public class PlayerMover : MonoBehaviour
     public CinemachineDollyCart dolly;
     public Image boostGauge;
 
+    public ParticleSystem boostParticleRight;
+    public ParticleSystem boostParticleLeft;
+
     void Start()
     {
-      //  _uiColorChange = GetComponent<UiColorChange>();
         _playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
         onCoolDown = false;
@@ -46,7 +51,6 @@ public class PlayerMover : MonoBehaviour
         ClampPos();
         RotationLook(h,v,lookspeed);
         HorizontalLean(_playerModel,h,50,0.1f);
-
         
         if (Input.GetKeyDown(KeyCode.Space)&&boostGauge.fillAmount>0)
         {
@@ -73,14 +77,6 @@ public class PlayerMover : MonoBehaviour
             StartCoroutine(BoostCoolDown());
 
         }
-        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.G))
-        {
-            int dir = Input.GetKeyDown(KeyCode.F) ? -1 : 1;
-            QuickSpin(dir);
-        }
-        
-        Debug.Log(isBoost);
-       
     }
 
     void LocalMove(float x, float y, float speed)
@@ -105,14 +101,45 @@ public class PlayerMover : MonoBehaviour
       Vector3 targetEulerAngels = target.localEulerAngles;
       target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z, -axis * leanLimit, lerpTime));
       
-      if (Input.GetKey(KeyCode.LeftShift))
+      if (Input.GetKey(KeyCode.F))
       {
           target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z,   90, 0.04f));
       }
-      if (Input.GetKey(KeyCode.RightShift))
+      if (Input.GetKeyUp(KeyCode.F))
+      {
+          _canspin = true;
+          Debug.Log("UP!");
+      }
+
+      if (_canspin && Input.GetKeyDown(KeyCode.F))
+      {
+          QuickSpin(-1);
+      }
+      
+      if (Input.GetKey(KeyCode.G))
       {
           target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z,   -90, 0.04f));
+          
       }
+      if (Input.GetKeyUp(KeyCode.G))
+      {
+          _canspin = true;
+      }
+      
+      if (_canspin && Input.GetKeyDown(KeyCode.G))
+      {
+          QuickSpin(1);
+      }
+      if (_canspin)
+      {
+          spinReceptionTime += Time.deltaTime;
+          if (spinReceptionTime > 0.1f)
+          {
+              _canspin = false;
+              spinReceptionTime = 0;
+          }
+      }
+      
     }
     
     private void OnDrawGizmos()
@@ -133,13 +160,19 @@ public class PlayerMover : MonoBehaviour
             float zoom = state ? -18f : 0;
             float orignalFov = state ? 40 : 55;
             float endFov = state ? 55 : 40;
-
             isBoost = state ? true : false;
 
        
             if (state)
             {
                 cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
+                boostParticleLeft.Play();
+                boostParticleRight.Play();
+            }
+            else
+            {
+                boostParticleLeft.Stop();
+                boostParticleRight.Stop();
             }
            // DOVirtual.Float(orignalFov, endFov, .5f, FovContoroll);
             DOVirtual.Float(dolly.m_Speed, speed, 0.35f, SetSpeed);
