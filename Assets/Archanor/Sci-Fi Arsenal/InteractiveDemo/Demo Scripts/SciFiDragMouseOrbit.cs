@@ -58,8 +58,8 @@ public class SciFiDragMouseOrbit : MonoBehaviour
 
             transform.rotation = rotation;
             transform.position = position;
-            velocityX = Mathf.Lerp(velocityX, 0, Time.deltaTime * smoothTime);
-            velocityY = Mathf.Lerp(velocityY, 0, Time.deltaTime * smoothTime);
+            velocityX = Mathf.Lerp(velocityX, 0, UnityEngine.Time.deltaTime * smoothTime);
+            velocityY = Mathf.Lerp(velocityY, 0, UnityEngine.Time.deltaTime * smoothTime);
         }
     }
     public static float ClampAngle(float angle, float min, float max)

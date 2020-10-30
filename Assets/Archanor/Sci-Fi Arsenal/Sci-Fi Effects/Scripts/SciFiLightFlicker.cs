@@ -24,7 +24,7 @@ void Update (){
 }
  
 float EvalWave (){
-    float x = (Time.time + phase)*frequency;
+    float x = (UnityEngine.Time.time + phase)*frequency;
     float y;
  
     x = x - Mathf.Floor(x); // normalized value (0..1)

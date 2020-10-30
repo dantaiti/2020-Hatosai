@@ -22,9 +22,9 @@ namespace SciFiArsenal
         void Update()
         {
             if (rotateSpace == spaceEnum.Local)
-                transform.Rotate(rotateVector * Time.deltaTime);
+                transform.Rotate(rotateVector * UnityEngine.Time.deltaTime);
             if (rotateSpace == spaceEnum.World)
-                transform.Rotate(rotateVector * Time.deltaTime, Space.World);
+                transform.Rotate(rotateVector * UnityEngine.Time.deltaTime, Space.World);
         }
     }
 }
