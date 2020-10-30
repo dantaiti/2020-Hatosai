@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2054741364163947513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.769817, y: -20.082432, z: 22.050709}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 7980266044020631416}
   m_Father: {fileID: 0}
@@ -78,7 +78,7 @@ MonoBehaviour:
     type: 3}
   Muzzle: {fileID: 527766365479641771}
   firerate: 1
-  _isinTL: 0
+  _isntinTL: 0
 --- !u!114 &9060659325217296521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,9 +91,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fa9c19be5eb0e4e916f8ee29b6a2f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 1
+  HP: 30
   Attack: 0
   score: 0
+--- !u!65 &590300698659135169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346577169722015170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9409733, y: 4.6730533, z: 10.067516}
+  m_Center: {x: -0.0008044243, y: 1.2097695, z: 3.0245047}
 --- !u!1001 &7581001638094782611
 PrefabInstance:
   m_ObjectHideFlags: 0
