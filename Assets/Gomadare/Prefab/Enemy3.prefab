@@ -36,7 +36,7 @@ MonoBehaviour:
     type: 3}
   Muzzle: {fileID: 8932476597555847293}
   firerate: 1
-  _isinTL: 0
+  _isntinTL: 0
 --- !u!114 &5635416417895753061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
     type: 3}
   Muzzle: {fileID: 3818544846957622980}
   firerate: 1
-  _isinTL: 0
+  _isntinTL: 0
 --- !u!114 &7871256644753241294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +70,19 @@ MonoBehaviour:
   HP: 1
   Attack: 0
   score: 0
+--- !u!65 &995943202333698039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770657621591412431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11360794, y: 0.070623375, z: 0.022824049}
+  m_Center: {x: 1.3191566e-18, y: 0.00033389323, z: -0.0008154051}
 --- !u!1 &909844468783476665
 GameObject:
   m_ObjectHideFlags: 0
