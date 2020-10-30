@@ -108,7 +108,6 @@ public class PlayerMover : MonoBehaviour
       if (Input.GetKeyUp(KeyCode.F))
       {
           _canspin = true;
-          Debug.Log("UP!");
       }
 
       if (_canspin && Input.GetKeyDown(KeyCode.F))
