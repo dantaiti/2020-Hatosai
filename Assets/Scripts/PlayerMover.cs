@@ -103,7 +103,7 @@ public class PlayerMover : MonoBehaviour
       
       if (Input.GetKey(KeyCode.F))
       {
-          target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z,   90, 0.04f));
+          target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z,   90, 0.08f));
       }
       if (Input.GetKeyUp(KeyCode.F))
       {
@@ -117,7 +117,7 @@ public class PlayerMover : MonoBehaviour
       
       if (Input.GetKey(KeyCode.G))
       {
-          target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z,   -90, 0.04f));
+          target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z,   -90, 0.08f));
           
       }
       if (Input.GetKeyUp(KeyCode.G))
