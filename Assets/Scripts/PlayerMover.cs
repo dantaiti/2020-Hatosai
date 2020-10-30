@@ -29,7 +29,8 @@ public class PlayerMover : MonoBehaviour
     public Transform cameraParent;
     public CinemachineDollyCart dolly;
     public Image boostGauge;
-
+    
+    private float _delta;
     public ParticleSystem boostParticleRight;
     public ParticleSystem boostParticleLeft;
 
@@ -77,11 +78,12 @@ public class PlayerMover : MonoBehaviour
             StartCoroutine(BoostCoolDown());
 
         }
+        
     }
 
     void LocalMove(float x, float y, float speed)
     {
-        transform.localPosition += new Vector3(x,y,0)*speed * Time.deltaTime;
+        transform.localPosition += new Vector3(x,y,0)*speed * UnityEngine.Time.deltaTime;
     }
     void ClampPos()
     {
@@ -94,7 +96,7 @@ public class PlayerMover : MonoBehaviour
     {
         aimTarget.parent.position = Vector3.zero;
         aimTarget.localPosition = new Vector3(h, v, 1);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(aimTarget.position), Mathf.Deg2Rad * speed * Time.deltaTime);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(aimTarget.position), Mathf.Deg2Rad * speed * UnityEngine.Time.deltaTime);
     }
     void HorizontalLean(Transform target, float axis, float leanLimit, float lerpTime)
     {
@@ -131,7 +133,7 @@ public class PlayerMover : MonoBehaviour
       }
       if (_canspin)
       {
-          spinReceptionTime += Time.deltaTime;
+          spinReceptionTime += UnityEngine.Time.deltaTime;
           if (spinReceptionTime > 0.1f)
           {
               _canspin = false;

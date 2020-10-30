@@ -38,9 +38,9 @@ public class BulletMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = transform.forward * (Time.deltaTime * movespeed);
+        rb.velocity = transform.forward * (UnityEngine.Time.deltaTime * movespeed);
         
-        bulletLifeTimer -= Time.deltaTime;
+        bulletLifeTimer -= UnityEngine.Time.deltaTime;
         // 一定時間たったら弾は非アクティブにする
         if(bulletLifeTimer < 0) this.gameObject.SetActive(false);
     }

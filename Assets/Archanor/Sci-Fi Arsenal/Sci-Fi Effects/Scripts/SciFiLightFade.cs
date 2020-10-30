@@ -29,7 +29,7 @@ namespace SciFiArsenal
         {
             if (gameObject.GetComponent<Light>())
             {
-                li.intensity -= initIntensity * (Time.deltaTime / life);
+                li.intensity -= initIntensity * (UnityEngine.Time.deltaTime / life);
                 if (killAfterLife && li.intensity <= 0)
                     Destroy(gameObject);
             }
