@@ -5,19 +5,111 @@
     <e p="C:\Users\minec\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_2020-Hatosai.1726383185.00" t="ExcludeRecursive" />
     <e p="C:\Users\minec\2020-Hatosai" t="IncludeRecursive">
       <e p="2020-Hatosai.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AllSkyFree" t="Include">
+          <e p="AllSkyFree_Readme.txt" t="Include" />
+        </e>
+        <e p="Archanor" t="Include">
+          <e p="Sci-Fi Arsenal" t="Include">
+            <e p="InteractiveDemo" t="Include">
+              <e p="Demo Scripts" t="Include">
+                <e p="SciFiBeamScript.cs" t="Include" />
+                <e p="SciFiButtonScript.cs" t="Include" />
+                <e p="SciFiDragMouseOrbit.cs" t="Include" />
+                <e p="SciFiFireProjectile.cs" t="Include" />
+                <e p="SciFiLoadSceneOnClick.cs" t="Include" />
+                <e p="SciFiLoopScript.cs" t="Include" />
+                <e p="SciFiProjectileScript.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Sci-Fi Effects" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="SciFiBeamStatic.cs" t="Include" />
+                <e p="SciFiLightFade.cs" t="Include" />
+                <e p="SciFiLightFlicker.cs" t="Include" />
+                <e p="SciFiPitchRandomizer.cs" t="Include" />
+                <e p="SciFiRotation.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Movinarc" t="Include">
+          <e p="PackageUninstaller" t="Include">
+            <e p="Editor" t="Include">
+              <e p="PUManager.cs" t="Include" />
+              <e p="PUSelection.cs" t="Include" />
+              <e p="TreeNode.cs" t="Include" />
+              <e p="TreeView.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DemiLib" t="Include">
+              <e p="Core" t="Include">
+                <e p="DemiLib.xml" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="DemiEditor.xml" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+            <e p="DOTweenPro" t="Include">
+              <e p="DOTweenAnimation.cs" t="Include" />
+              <e p="DOTweenDeAudio.cs" t="Include" />
+              <e p="DOTweenDeUnityExtended.cs" t="Include" />
+              <e p="DOTweenProShortcuts.cs" t="Include" />
+              <e p="DOTweenTextMeshPro.cs" t="Include" />
+              <e p="DOTweenTk2d.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DOTweenAnimationInspector.cs" t="Include" />
+                <e p="DOTweenPreviewManager.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+            <e p="readme_DOTweenPro.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="CameraFollow.cs" t="Include" />
           <e p="gomadare" t="Include">
+            <e p="Enemy" t="Include">
+              <e p="Enemy.cs" t="Include" />
+              <e p="EnemyActiveChange.cs" t="Include" />
+              <e p="EnemyShot.cs" t="Include" />
+            </e>
             <e p="Shoot" t="Include">
+              <e p="aimcontrol.cs" t="Include" />
               <e p="BulletMove.cs" t="Include" />
               <e p="BulletPool.cs" t="Include" />
+              <e p="HPLinkText.cs" t="Include" />
+              <e p="PlayerHP.cs" t="Include" />
+              <e p="ShotInstance.cs" t="Include" />
               <e p="ShotRayPoint.cs" t="Include" />
             </e>
           </e>
+          <e p="Item.cs" t="Include" />
+          <e p="ItemGetter.cs" t="Include" />
+          <e p="MovePlane.cs" t="Include" />
           <e p="PlayerMover.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="UIColorChange.cs" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">

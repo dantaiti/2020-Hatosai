@@ -12,15 +12,17 @@ public class BulletMove : MonoBehaviour
     // [SerializeField]
     // private GameObject shotpoint;
     private Transform transf_Bullet;
-    private const float BULLET_LIFE_TIME = 2;
+    private const float BULLET_LIFE_TIME = 3;
     private float bulletLifeTimer;
     public float movespeed=10;
     private Rigidbody rb;
+    public float Attackpower=0.1f;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        bulletLifeTimer = BULLET_LIFE_TIME;
     }
     public void Init(Transform startPos) {
         transf_Bullet = GetComponent<Transform>();
@@ -33,7 +35,6 @@ public class BulletMove : MonoBehaviour
         
         gameObject.SetActive(true);
     }
-
     // Update is called once per frame
     void Update()
     {
