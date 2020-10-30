@@ -61,6 +61,19 @@ Transform:
   m_Father: {fileID: 7980266044020631416}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &590300698659135169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346577169722015170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9409733, y: 4.6730533, z: 10.067516}
+  m_Center: {x: -0.0008044243, y: 1.2097695, z: 3.0245047}
 --- !u!114 &983058966132626097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,20 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 30
   Attack: 0
-  score: 0
---- !u!65 &590300698659135169
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7346577169722015170}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.9409733, y: 4.6730533, z: 10.067516}
-  m_Center: {x: -0.0008044243, y: 1.2097695, z: 3.0245047}
+  Enemyscore: 20000
 --- !u!1001 &7581001638094782611
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,10 +13,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotInstance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/TimeCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ScoreAcula.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyShot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/HPLinkText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/aimcontrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiProjectileScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,12 +37,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/aimcontrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyActiveChange.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/PlayerHP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/HPLinkText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/Time.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/TimeCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/ScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ScoreAcula.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/PlayerHP.cs" />
       </list>
     </option>
   </component>
@@ -99,7 +106,7 @@
       <workItem from="1601024923383" duration="1202000" />
       <workItem from="1603367765040" duration="6174000" />
       <workItem from="1603702412269" duration="2937000" />
-      <workItem from="1603939615557" duration="32610000" />
+      <workItem from="1603939615557" duration="39396000" />
     </task>
     <servers />
   </component>

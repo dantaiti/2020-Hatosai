@@ -84,7 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 3
   Attack: 0
-  score: 0
+  Enemyscore: 3000
 --- !u!1 &3227878072554063949
 GameObject:
   m_ObjectHideFlags: 0
