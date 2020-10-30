@@ -11,18 +11,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotInstance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyShot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/HPLinkText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/aimcontrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/PlayerHP.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyActiveChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotInstance.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyShot.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -33,9 +34,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/aimcontrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyActiveChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/PlayerHP.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/HPLinkText.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +97,7 @@
       <workItem from="1601024923383" duration="1202000" />
       <workItem from="1603367765040" duration="6174000" />
       <workItem from="1603702412269" duration="2937000" />
-      <workItem from="1603939615557" duration="28061000" />
+      <workItem from="1603939615557" duration="30375000" />
     </task>
     <servers />
   </component>

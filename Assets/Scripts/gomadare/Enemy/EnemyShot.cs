@@ -9,7 +9,7 @@ public class EnemyShot : MonoBehaviour
     [SerializeField] private GameObject EnemyBullet;
     [SerializeField] private Transform Muzzle;
     [SerializeField] private float firerate = 1.0f;
-    [SerializeField] private bool _isntinTL=false;
+    [SerializeField] private bool _isntinTL = false;
     private bool _isVisible;
     private bool _isMetActive;
 
