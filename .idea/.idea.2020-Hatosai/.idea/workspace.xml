@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/aimcontrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/PlayerHP.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
@@ -29,11 +30,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/aimcontrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyActiveChange.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Enemy/EnemyShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/PlayerHP.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +95,7 @@
       <workItem from="1601024923383" duration="1202000" />
       <workItem from="1603367765040" duration="6174000" />
       <workItem from="1603702412269" duration="2937000" />
-      <workItem from="1603939615557" duration="11267000" />
+      <workItem from="1603939615557" duration="28061000" />
     </task>
     <servers />
   </component>

@@ -16,6 +16,7 @@ public class BulletMove : MonoBehaviour
     private float bulletLifeTimer;
     public float movespeed=10;
     private Rigidbody rb;
+    public float Attackpower=0.1f;
     
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,6 @@ public class BulletMove : MonoBehaviour
         
         gameObject.SetActive(true);
     }
-
     // Update is called once per frame
     void Update()
     {
