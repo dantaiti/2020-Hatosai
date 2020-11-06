@@ -29,18 +29,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovePlane.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiDragMouseOrbit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiProjectileScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiBeamStatic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiPitchRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFlicker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenPreviewManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiBeamScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -51,7 +60,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiDragMouseOrbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiBeamStatic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFlicker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiBeamScript.cs" />
       </list>
     </option>
   </component>

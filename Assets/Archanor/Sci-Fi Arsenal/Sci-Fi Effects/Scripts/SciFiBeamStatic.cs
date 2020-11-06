@@ -68,7 +68,7 @@ public class SciFiBeamStatic : MonoBehaviour
 
             float distance = Vector3.Distance(transform.position, end);
             line.material.mainTextureScale = new Vector2(distance / textureLengthScale, 1); //This sets the scale of the texture so it doesn't look stretched
-            line.material.mainTextureOffset -= new Vector2(Time.deltaTime * textureScrollSpeed, 0); //This scrolls the texture along the beam if not set to 0
+            line.material.mainTextureOffset -= new Vector2(UnityEngine.Time.deltaTime * textureScrollSpeed, 0); //This scrolls the texture along the beam if not set to 0
         }
     }
 

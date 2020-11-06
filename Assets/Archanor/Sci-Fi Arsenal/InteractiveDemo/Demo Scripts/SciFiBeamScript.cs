@@ -152,7 +152,7 @@ public class SciFiBeamScript : MonoBehaviour {
 
         float distance = Vector3.Distance(start, end);
         line.sharedMaterial.mainTextureScale = new Vector2(distance / textureLengthScale, 1);
-        line.sharedMaterial.mainTextureOffset -= new Vector2(Time.deltaTime * textureScrollSpeed, 0);
+        line.sharedMaterial.mainTextureOffset -= new Vector2(UnityEngine.Time.deltaTime * textureScrollSpeed, 0);
     }
 }
 }
