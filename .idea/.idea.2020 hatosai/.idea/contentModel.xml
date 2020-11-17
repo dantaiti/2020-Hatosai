@@ -94,15 +94,17 @@
               <e p="EnemyActiveChange.cs" t="Include" />
               <e p="EnemyShot.cs" t="Include" />
             </e>
+            <e p="ScoreManager.cs" t="Include" />
             <e p="Shoot" t="Include">
               <e p="aimcontrol.cs" t="Include" />
               <e p="BulletMove.cs" t="Include" />
               <e p="BulletPool.cs" t="Include" />
               <e p="HPLinkText.cs" t="Include" />
               <e p="PlayerHP.cs" t="Include" />
+              <e p="ScoreAcula.cs" t="Include" />
               <e p="ShotInstance.cs" t="Include" />
               <e p="ShotRayPoint.cs" t="Include" />
-              <e p="Time.cs" t="Include" />
+              <e p="TimeCounter.cs" t="Include" />
             </e>
           </e>
           <e p="Item.cs" t="Include" />
@@ -110,6 +112,7 @@
           <e p="MovePlane.cs" t="Include" />
           <e p="PlayerMover.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="TitleAnim.cs" t="Include" />
           <e p="UIColorChange.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

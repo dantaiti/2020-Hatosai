@@ -38,10 +38,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemGetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/ShotRayPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiProjectileScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiBeamStatic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiPitchRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TitleAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFlicker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenPreviewManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiBeamScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -61,7 +64,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UIColorChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiDragMouseOrbit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gomadare/Shoot/BulletMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiRotation.cs" />
@@ -69,6 +71,8 @@
         <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFade.cs" />
         <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/Sci-Fi Effects/Scripts/SciFiLightFlicker.cs" />
         <option value="$PROJECT_DIR$/Assets/Archanor/Sci-Fi Arsenal/InteractiveDemo/Demo Scripts/SciFiBeamScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TitleAnim.cs" />
       </list>
     </option>
   </component>
@@ -140,6 +144,8 @@
       <workItem from="1603730257730" duration="6929000" />
       <workItem from="1603797327420" duration="685000" />
       <workItem from="1603945409027" duration="6231000" />
+      <workItem from="1604661451988" duration="2256000" />
+      <workItem from="1605422053158" duration="10841000" />
     </task>
     <servers />
   </component>

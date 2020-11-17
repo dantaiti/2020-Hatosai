@@ -33,14 +33,12 @@ public class PlayerMover : MonoBehaviour
     private float _delta;
     public ParticleSystem boostParticleRight;
     public ParticleSystem boostParticleLeft;
-
     void Start()
     {
         _playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
         onCoolDown = false;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -76,11 +74,8 @@ public class PlayerMover : MonoBehaviour
         {
             Break(false);
             StartCoroutine(BoostCoolDown());
-
         }
-        
     }
-
     void LocalMove(float x, float y, float speed)
     {
         transform.localPosition += new Vector3(x,y,0)*speed * UnityEngine.Time.deltaTime;
@@ -142,7 +137,6 @@ public class PlayerMover : MonoBehaviour
       }
       
     }
-    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
